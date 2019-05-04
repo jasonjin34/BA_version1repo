@@ -78,7 +78,7 @@ def findEffectivePoints():
                         filter_lines_point[1].append(x2)
                         filter_lines_point[2].append(y2)
 
-    cv.imshow('original edge image', featureLine)
+    cv.imwrite('Resultimage/filteredline.png', featureLine)
 
     pixel_num = 0
     for height_index in range(height):
